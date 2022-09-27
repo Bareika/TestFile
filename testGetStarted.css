@@ -1,0 +1,301 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  width: 100%;
+}
+body .buttonWithArrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .buttonWithArrow button {
+  margin-left: 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+body .buttonWithArrow button:hover {
+  background-color: rgb(5, 224, 11);
+  color: black;
+}
+body .buttonWithArrow i {
+  background-color: black;
+  color: rgb(5, 224, 11);
+  font-size: 24px;
+  border: 1px solid white;
+  padding: 10px;
+}
+body nav {
+  border: 1px solid black;
+  grid-area: 1/1/1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+body nav .navName {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+  justify-content: center;
+  border-right: 1px solid white;
+  padding-right: 30px;
+  text-decoration: none;
+  color: white;
+}
+body nav .navName i {
+  color: rgb(5, 224, 11);
+}
+body nav .navName:hover {
+  cursor: pointer;
+}
+body nav .navList {
+  display: flex;
+  font-size: 16px;
+}
+body nav .navList .navlistItem {
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+}
+body nav .navList a:hover {
+  color: rgb(5, 224, 11);
+  cursor: pointer;
+}
+body nav .navList .navlistGetStarted {
+  color: rgb(5, 224, 11);
+  font-weight: 700;
+  font-size: 18px;
+}
+body nav .navList .navlistGetStarted:hover {
+  color: white;
+}
+body nav .navList .navlistLogIn {
+  color: rgb(5, 224, 11);
+  font-size: 18px;
+  border-right: none;
+}
+body header {
+  grid-area: 2/1/3/-1;
+  text-align: center;
+  border-top: 1px solid white;
+  margin-top: 20px;
+}
+body header h1 {
+  font-size: 60px;
+}
+body main {
+  border: 1px solid black;
+  grid-area: 3/1/4/-1;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
+}
+body main .container {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+body main .container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 40px;
+  position: relative;
+}
+body main .container .card .smallText {
+  margin-bottom: 20px;
+}
+body main .container .card h4 {
+  position: absolute;
+  top: 85px;
+  left: 135px;
+  font-size: 18px;
+  color: rgb(5, 224, 11);
+}
+body main .container .card h1 {
+  margin: 0px;
+  font-size: 100px;
+  color: rgb(5, 224, 11);
+}
+body main .container .card h6 {
+  margin: 0;
+  color: rgb(5, 224, 11);
+}
+body main .container .card p {
+  padding: 10px;
+  font-weight: 600;
+  margin: 0px;
+}
+body main .container .card button {
+  border: 1px solid white;
+  background-color: black;
+  color: rgb(5, 224, 11);
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+}
+body main .container .card button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+body main .container .card .sticker {
+  background-color: rgb(5, 224, 11);
+  color: black;
+  padding: 5px;
+  position: absolute;
+  top: -15px;
+}
+body main .container .cardBottom {
+  padding-bottom: 20px;
+}
+body main .container .cardBottom .item {
+  border-bottom: solid 1px gray;
+  width: 300px;
+  text-align: center;
+}
+body main .container .cardBottom .item:last-child {
+  border: none;
+}
+body footer {
+  border: 1px solid black;
+  grid-area: 5/1/-1/-1;
+  border-bottom: 1px solid white;
+}
+body footer .footerTop {
+  display: flex;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px white solid;
+  padding: 30px;
+}
+body footer .footerTop .footerTopText {
+  margin-top: 20px;
+  padding: 40px;
+}
+body footer .footerTop .footerTopEmail {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+body footer .footerTop .footerTopEmail input {
+  background-color: black;
+  border-style: none;
+  width: 300px;
+  color: white;
+}
+body footer .footerTop .footerTopEmail label {
+  color: rgb(5, 224, 11);
+  font-weight: 400;
+  font-size: 18px;
+}
+body footer .footerTop .footerTopEmail .footerTopEmailLine {
+  border-bottom: 1px solid white;
+}
+body footer .footerTop .footerTopEmail .footerTopEmailLine button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  border-bottom: none;
+}
+body footer .footerMain {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+body footer .footerMain .footerMainLeft {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+body footer .footerMain .footerMainLeft .footerMainName {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+}
+body footer .footerMain .footerMainLeft .footerMainName i {
+  color: rgb(5, 224, 11);
+}
+body footer .footerMain .footerMainLeft p {
+  width: 200px;
+  font-size: 18px;
+  margin: 15px;
+}
+body footer .footerMainRight {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+}
+body footer .footerMainRight .footerMainMenu {
+  grid-area: 1/1/-1/2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainMenu a {
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+  font-size: 18px;
+}
+body footer .footerMainRight .footerMainSocials {
+  grid-area: 1/2/-1/3;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainSocials a {
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+  font-size: 18px;
+}
+body footer .footerMainRight .footerMainHours {
+  grid-area: 1/3/2/4;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainHours p {
+  font-size: 18px;
+  margin: 3px;
+}
+body footer .footerMainRight .footerMainAddress {
+  grid-area: 2/3/3/4;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+body footer .footerMainRight .footerMainAddress p {
+  font-size: 18px;
+  margin: 3px;
+}
+body footer .footerBottom {
+  border-top: white 1px solid;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+body footer .footerBottom p a {
+  color: white;
+}/*# sourceMappingURL=testGetStarted.css.map */

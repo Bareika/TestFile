@@ -1,0 +1,325 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  width: 100%;
+}
+body .buttonWithArrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .buttonWithArrow button {
+  margin-left: 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+body .buttonWithArrow button:hover {
+  background-color: rgb(5, 224, 11);
+  color: black;
+}
+body .buttonWithArrow i {
+  background-color: black;
+  color: rgb(5, 224, 11);
+  font-size: 24px;
+  border: 1px solid white;
+  padding: 10px;
+}
+body nav {
+  border: 1px solid black;
+  grid-area: 1/1/1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+body nav .navName {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+  justify-content: center;
+  border-right: 1px solid white;
+  padding-right: 30px;
+  text-decoration: none;
+  color: white;
+}
+body nav .navName i {
+  color: rgb(5, 224, 11);
+}
+body nav .navName:hover {
+  cursor: pointer;
+}
+body nav .navList {
+  display: flex;
+  font-size: 16px;
+}
+body nav .navList .navlistItem {
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+}
+body nav .navList a:hover {
+  color: rgb(5, 224, 11);
+  cursor: pointer;
+}
+body nav .navList .navlistGetStarted {
+  color: rgb(5, 224, 11);
+  font-weight: 700;
+  font-size: 18px;
+}
+body nav .navList .navlistGetStarted:hover {
+  color: white;
+}
+body nav .navList .navlistLogIn {
+  color: rgb(5, 224, 11);
+  font-size: 18px;
+  border-right: none;
+}
+body main {
+  border-bottom: solid 1px white;
+  grid-area: 3/1/4/-1;
+}
+body main .textPart {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+body main .textPart .bigText {
+  display: flex;
+  justify-content: center;
+}
+body main .textPart .bigText h1 {
+  font-size: 100px;
+  width: 700px;
+  position: relative;
+}
+body main .textPart .bigText .circle {
+  position: absolute;
+  top: 150px;
+  left: -50px;
+  width: 500px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgb(5, 224, 11);
+  transform: skew(-25deg);
+  transform: rotate(-5deg);
+}
+body main .textPart .bigText .circleSecond {
+  transform: rotate(-15deg);
+}
+body main .textPart .paragraph {
+  border-left: white 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .textPart .paragraph p {
+  width: 300px;
+  font-size: 20px;
+}
+body main .container {
+  display: flex;
+  justify-content: center;
+}
+body main .container .questions {
+  flex: 1;
+}
+body main .container .questions h1 {
+  transform: rotateZ(-90deg);
+  font-size: 72px;
+}
+body main .container .form {
+  flex: 2;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+body main .container .form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  padding: 100px;
+}
+body main .container .form form .item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  color: rgb(5, 224, 11);
+}
+body main .container .form form .item input {
+  background-color: black;
+  border: none;
+  border-bottom: white 1px solid;
+  padding: 10px;
+  color: rgb(5, 224, 11);
+  font-size: 18px;
+}
+body main .container .form form .item label {
+  padding: 10px;
+  font-size: 26px;
+}
+body main .container .form form .item .textHeight {
+  height: 80px;
+}
+body main .container .form form .leaveMessage {
+  width: 600px;
+}
+body main .container .form form .item6 {
+  grid-area: 4/2/5/-1;
+  display: flex;
+  justify-content: flex-start;
+}
+body main .container .form form .item6 button {
+  width: 250px;
+  height: 60px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+body main .container .contacts {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+}
+body footer {
+  border: 1px solid black;
+  grid-area: 5/1/-1/-1;
+  border-bottom: 1px solid white;
+}
+body footer .footerTop {
+  display: flex;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px white solid;
+  padding: 30px;
+}
+body footer .footerTop .footerTopText {
+  margin-top: 20px;
+  padding: 40px;
+}
+body footer .footerTop .footerTopEmail {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+body footer .footerTop .footerTopEmail input {
+  background-color: black;
+  border-style: none;
+  width: 300px;
+  color: white;
+}
+body footer .footerTop .footerTopEmail label {
+  color: rgb(5, 224, 11);
+  font-weight: 400;
+  font-size: 18px;
+}
+body footer .footerTop .footerTopEmail .footerTopEmailLine {
+  border-bottom: 1px solid white;
+}
+body footer .footerTop .footerTopEmail .footerTopEmailLine button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  border-bottom: none;
+}
+body footer .footerMain {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+body footer .footerMain .footerMainLeft {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+body footer .footerMain .footerMainLeft .footerMainName {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+}
+body footer .footerMain .footerMainLeft .footerMainName i {
+  color: rgb(5, 224, 11);
+}
+body footer .footerMain .footerMainLeft p {
+  width: 200px;
+  font-size: 18px;
+  margin: 15px;
+}
+body footer .footerMainRight {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+}
+body footer .footerMainRight .footerMainMenu {
+  grid-area: 1/1/-1/2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainMenu a {
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+  font-size: 18px;
+}
+body footer .footerMainRight .footerMainSocials {
+  grid-area: 1/2/-1/3;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainSocials a {
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+  font-size: 18px;
+}
+body footer .footerMainRight .footerMainHours {
+  grid-area: 1/3/2/4;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainHours p {
+  font-size: 18px;
+  margin: 3px;
+}
+body footer .footerMainRight .footerMainAddress {
+  grid-area: 2/3/3/4;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+body footer .footerMainRight .footerMainAddress p {
+  font-size: 18px;
+  margin: 3px;
+}
+body footer .footerBottom {
+  border-top: white 1px solid;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+body footer .footerBottom p a {
+  color: white;
+}/*# sourceMappingURL=testContact.css.map */

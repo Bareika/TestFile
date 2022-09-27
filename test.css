@@ -1,0 +1,724 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .buttonWithArrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body .buttonWithArrow button {
+  margin-left: 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+body .buttonWithArrow button:hover {
+  background-color: rgb(5, 224, 11);
+  color: black;
+  transition: 0.3s;
+}
+body .buttonWithArrow i {
+  background-color: black;
+  color: rgb(5, 224, 11);
+  font-size: 24px;
+  border: 1px solid white;
+  padding: 10px;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  font-size: 130px;
+  max-width: 100%;
+  margin-top: 20px;
+  border: 1px solid black;
+  grid-area: 2/1/3/-1;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  font-weight: 700;
+}
+body nav {
+  border: 1px solid black;
+  grid-area: 1/1/1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+body nav .navName {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+  justify-content: center;
+  border-right: 1px solid white;
+  padding-right: 30px;
+  text-decoration: none;
+  color: white;
+}
+body nav .navName i {
+  color: rgb(5, 224, 11);
+}
+body nav .navName:hover {
+  cursor: pointer;
+}
+body nav .navList {
+  display: flex;
+  font-size: 16px;
+}
+body nav .navList .navlistItem {
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+}
+body nav .navList a:hover {
+  color: rgb(5, 224, 11);
+  cursor: pointer;
+}
+body nav .navList .navlistGetStarted {
+  color: rgb(5, 224, 11);
+  font-weight: 700;
+  font-size: 18px;
+}
+body nav .navList .navlistGetStarted:hover {
+  color: white;
+}
+body nav .navList .navlistLogIn {
+  color: rgb(5, 224, 11);
+  font-size: 18px;
+  border-right: none;
+}
+body main {
+  border: 1px solid black;
+  grid-area: 3/1/4/-1;
+}
+body main .firstWhitePartUpper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid black;
+  background-color: white;
+  color: black;
+}
+body main .firstWhitePartUpper h3 {
+  font-size: 60px;
+  width: 380px;
+  border-right: 1px solid black;
+  padding: 20px;
+  margin: 0;
+}
+body main .firstWhitePartUpper p {
+  font-size: 18px;
+  width: 250px;
+  padding: 20px;
+}
+body main .firstWhitePartUpper .buttonWithArrowWhite {
+  grid-column: 5/-1;
+  align-self: flex-end;
+  padding-bottom: 50px;
+  display: flex;
+  margin-top: 30px;
+  height: 45px;
+  margin-right: 20px;
+  border-collapse: collapse;
+}
+body main .firstWhitePartUpper .buttonWithArrowWhite button {
+  margin-left: 15px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+body main .firstWhitePartUpper .buttonWithArrowWhite button:hover {
+  background-color: rgb(5, 224, 11);
+  color: black;
+  transition: 0.3s;
+}
+body main .firstWhitePartUpper .buttonWithArrowWhite i {
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  border: 1px solid black;
+  padding: 9.5px;
+}
+body main .firstBlackPart {
+  display: flex;
+  justify-content: space-between;
+}
+body main .firstBlackPart .firstBlackPartPrgrph {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+body main .firstBlackPart .firstBlackPartPrgrph h3 {
+  font-size: 32px;
+  width: 250px;
+}
+body main .firstBlackPart .firstBlackPartPrgrph p {
+  font-size: 18px;
+  width: 250px;
+}
+body main .firstBlackPart .firstBlackPartPrgrph .buttonWithArrow {
+  margin-top: 200px;
+  align-self: flex-start;
+}
+body main .firstBlackPart .BlackPartPhoto {
+  border-left: 1px solid white;
+  padding: 40px;
+  padding-left: 40px;
+}
+body main .firstBlackPart .BlackPartPhoto img {
+  height: 100%;
+  width: 1000px;
+}
+body main .greenLine {
+  background-color: rgb(5, 224, 11);
+  display: flex;
+  justify-content: center;
+}
+body main .greenLine h3 {
+  color: black;
+  font-size: 24px;
+  margin: auto 0;
+}
+body main .greenLine button {
+  height: 60px;
+  background-color: rgb(5, 224, 11);
+  border: none;
+  cursor: pointer;
+}
+body main .firstWhitePart {
+  background-color: white;
+  color: black;
+}
+body main .firstWhitePart .firstWhitePartLower {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+body main .firstWhitePart .firstWhitePartLower div {
+  padding-top: 30px;
+  position: relative;
+  margin-right: 0;
+}
+body main .firstWhitePart .firstWhitePartLower div img {
+  width: 100%;
+  height: 400px;
+}
+body main .firstWhitePart .firstWhitePartLower div h3 {
+  padding-left: 10px;
+  font-size: 24px;
+}
+body main .firstWhitePart .firstWhitePartLower div i {
+  position: absolute;
+  top: 40%;
+  right: 45%;
+  font-size: 50px;
+  color: rgb(5, 224, 11);
+}
+body main .firstWhitePart .firstWhitePartLower div i:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+body main .secondBlackPart {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 1px white;
+}
+body main .secondBlackPart .secondBlackPartPrgrph {
+  padding-left: 100px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+body main .secondBlackPart .secondBlackPartPrgrph .sweatSleepRepeat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  width: 200px;
+  position: relative;
+}
+body main .secondBlackPart .secondBlackPartPrgrph .sweatSleepRepeat .circle {
+  position: absolute;
+  top: 24px;
+  left: 130px;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgb(5, 224, 11);
+  transform: skew(-25deg);
+}
+body main .secondBlackPart .secondBlackPartPrgrph .sweatSleepRepeat .circleSecond {
+  transform: rotate(-25deg);
+}
+body main .secondBlackPart .secondBlackPartPrgrph h3 {
+  font-size: 48px;
+  width: 350px;
+}
+body main .secondBlackPart .secondBlackPartPrgrph p {
+  font-size: 18px;
+  width: 250px;
+}
+body main .secondBlackPart .secondBlackPartPrgrph .buttonWithArrow {
+  margin-top: 60px;
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+body main .secondBlackPart .BlackPartPhoto {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body main .secondBlackThinPart {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid white;
+}
+body main .secondBlackThinPart h3 {
+  font-size: 60px;
+  width: 360px;
+  border-right: 1px solid white;
+  padding: 20px;
+  margin: 0;
+}
+body main .secondBlackThinPart p {
+  font-size: 18px;
+  width: 250px;
+  padding: 20px;
+}
+body main .secondBlackThinPart .buttonWithArrow {
+  grid-column: 5/-1;
+  align-self: flex-end;
+  padding-bottom: 50px;
+  display: flex;
+  margin-top: 30px;
+  height: 45px;
+  margin-right: 20px;
+  border-collapse: collapse;
+}
+body main .secondBlackThinPart .buttonWithArrow button {
+  margin-left: 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+body main .secondBlackThinPart .buttonWithArrow button:hover {
+  background-color: rgb(5, 224, 11);
+  color: black;
+}
+body main .secondBlackThinPart .buttonWithArrow i {
+  background-color: black;
+  color: rgb(5, 224, 11);
+  font-size: 24px;
+  border: 1px solid white;
+  padding: 9.5px;
+}
+body main .thirdBlackPart {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px 1fr;
+  border-bottom: 1px solid white;
+}
+body main .thirdBlackPart h1 {
+  transform: rotate(-90deg);
+  margin-top: 400px;
+  width: 200px;
+  padding-bottom: 50px;
+}
+body main .thirdBlackPart .pictureContainer {
+  position: relative;
+}
+body main .thirdBlackPart .pictureContainer .container {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid white;
+  background-color: black;
+  bottom: 0px;
+}
+body main .thirdBlackPart .pictureContainer .container .priceContainer {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 170px 130px;
+  grid-template-rows: auto auto auto;
+}
+body main .thirdBlackPart .pictureContainer .container h1 {
+  grid-area: 1/1/3/3;
+  font-size: 100px;
+  margin: 0;
+  transform: none;
+  padding: 0;
+  justify-self: center;
+}
+body main .thirdBlackPart .pictureContainer .container h3 {
+  margin: 0;
+  grid-area: 1/2/1/3;
+  align-self: center;
+  justify-self: center;
+  font-weight: 100;
+}
+body main .thirdBlackPart .pictureContainer .container h4 {
+  align-self: center;
+  grid-area: 2/2/3/3;
+  margin: 0;
+  justify-self: center;
+  font-weight: 100;
+}
+body main .thirdBlackPart .pictureContainer .container .cancel {
+  font-weight: 300;
+  width: 60px;
+  grid-area: 2/2/3/-1;
+  justify-self: center;
+  align-self: center;
+}
+body main .thirdBlackPart .pictureContainer .container div {
+  margin: 0;
+  grid-area: 3/1/-1/-1;
+}
+body main .thirdBlackPart .pictureContainer .container .circle {
+  position: absolute;
+  bottom: 55px;
+  right: 20px;
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid rgb(5, 224, 11);
+  transform: skew(-25deg);
+}
+body main .secondWhitePart {
+  background-color: white;
+  color: black;
+  display: flex;
+  padding-top: 40px;
+  padding: 10px;
+}
+body main .secondWhitePart .container {
+  padding: 10px;
+}
+body main .secondWhitePart .container h1 {
+  padding-left: 10px;
+  font-size: 32px;
+}
+body main .secondWhitePart .container img {
+  height: 300px;
+  width: 450px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+body main .secondWhitePart .container p {
+  padding-left: 10px;
+  font-size: 18px;
+  width: 300px;
+}
+body main .fourthBlackPart {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+body main .fourthBlackPart img {
+  width: 110%;
+}
+body main .fourthBlackPart .fourthBlackPartRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 200px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .sweatSleepRepeat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  width: 250px;
+  position: relative;
+}
+body main .fourthBlackPart .fourthBlackPartRight .sweatSleepRepeat .circle {
+  position: absolute;
+  top: 24px;
+  right: 180px;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgb(5, 224, 11);
+  transform: skew(-25deg);
+}
+body main .fourthBlackPart .fourthBlackPartRight .sweatSleepRepeat .circleSecond {
+  transform: rotate(-25deg);
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart {
+  width: 400px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart p {
+  font-size: 20px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart .inputs input {
+  height: 40px;
+  font-size: 18px;
+  position: relative;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart .inputs .prefix {
+  width: 60px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart .inputs .phnumber {
+  width: 140px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart .inputs button {
+  width: 140px;
+  background-color: rgb(5, 224, 11);
+  height: 50px;
+  font-size: 16px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart .inputs .textbox {
+  position: absolute;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  bottom: 242px;
+  right: 370px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart .inputs .textbox2 {
+  right: 250px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .middlePart button {
+  background-color: black;
+  margin-top: 50px;
+  padding: 10px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha {
+  display: flex;
+  justify-content: flex-end;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha .captchaLogo img {
+  width: 60px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha .hiddenPart {
+  background-color: rgb(26, 115, 232);
+  width: 250px;
+  height: 60px;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: transform 0.3s, opacity 0.3s;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha .hiddenPart div {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha .hiddenPart h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha .hiddenPart p {
+  margin: 0;
+  margin-top: 2px;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha .hiddenPart a {
+  font-size: 12px;
+  padding: 5px;
+  color: white;
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha div:hover + .hiddenPart {
+  opacity: 1;
+  transform: translateX(0);
+}
+body main .fourthBlackPart .fourthBlackPartRight .captcha .hiddenPart:hover {
+  opacity: 1;
+  transform: translateX(0);
+}
+body main .lastBlackPart {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .lastBlackPart .item {
+  display: flex;
+  width: 49.9%;
+  border-right: white 1px solid;
+  border-bottom: white 1px solid;
+}
+body main .lastBlackPart .item .container {
+  padding: 40px;
+  width: 50%;
+}
+body main .lastBlackPart .item .container h3 {
+  width: 80px;
+  font-size: 32px;
+}
+body main .lastBlackPart .item .container p {
+  font-size: 18px;
+  width: 300px;
+}
+body main .lastBlackPart .item .container div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+body main .lastBlackPart .item .container div p {
+  font-weight: 600;
+  width: auto;
+}
+body main .lastBlackPart .item .container div i {
+  color: rgb(5, 224, 11);
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+body main .lastBlackPart .item .emptyPart {
+  width: 50%;
+}
+body main .lastBlackPart .item2 {
+  border-right: none;
+}
+body footer {
+  border: 1px solid black;
+  grid-area: 5/1/-1/-1;
+  border-bottom: 1px solid white;
+}
+body footer .footerTop {
+  display: flex;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px white solid;
+  padding: 30px;
+}
+body footer .footerTop .footerTopText {
+  margin-top: 20px;
+  padding: 40px;
+}
+body footer .footerTop .footerTopEmail {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+body footer .footerTop .footerTopEmail input {
+  background-color: black;
+  border-style: none;
+  width: 300px;
+  color: white;
+}
+body footer .footerTop .footerTopEmail label {
+  color: rgb(5, 224, 11);
+  font-weight: 400;
+  font-size: 18px;
+}
+body footer .footerTop .footerTopEmail .footerTopEmailLine {
+  border-bottom: 1px solid white;
+}
+body footer .footerTop .footerTopEmail .footerTopEmailLine button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  border-bottom: none;
+}
+body footer .footerMain {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+body footer .footerMain .footerMainLeft {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+body footer .footerMain .footerMainLeft .footerMainName {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+}
+body footer .footerMain .footerMainLeft .footerMainName i {
+  color: rgb(5, 224, 11);
+}
+body footer .footerMain .footerMainLeft p {
+  width: 200px;
+  font-size: 18px;
+  margin: 15px;
+}
+body footer .footerMainRight {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+}
+body footer .footerMainRight .footerMainMenu {
+  grid-area: 1/1/-1/2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainMenu a {
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+  font-size: 18px;
+}
+body footer .footerMainRight .footerMainSocials {
+  grid-area: 1/2/-1/3;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainSocials a {
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+  font-size: 18px;
+}
+body footer .footerMainRight .footerMainHours {
+  grid-area: 1/3/2/4;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+body footer .footerMainRight .footerMainHours p {
+  font-size: 18px;
+  margin: 3px;
+}
+body footer .footerMainRight .footerMainAddress {
+  grid-area: 2/3/3/4;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+body footer .footerMainRight .footerMainAddress p {
+  font-size: 18px;
+  margin: 3px;
+}
+body footer .footerBottom {
+  border-top: white 1px solid;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+body footer .footerBottom p a {
+  color: white;
+}/*# sourceMappingURL=test.css.map */
